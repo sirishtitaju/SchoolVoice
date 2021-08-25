@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@font-face {
+font-family: "Helvetica";
+src: url("../Sv. Fonts/English font/HelveticaNeue-Regular.ttf"); 
+src: url("../Sv. Fonts/English font/helvetica-neue-bold.ttf") format("woff"),
+url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+}
+
+:root{
+  --primary-color:#ffffff;
+  --secondar-color:#3664D6;
+  --teritary-color: #EAF3FC;
+  
+  --white-color:#ffffff;
+  --grey-color:#f7f7f7;
+
+  --black-color:#525659;
+  --green-color:#09a943;
+}
+
+/* ------------------------------- Global Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 62.5%; 
+  overflow-x: hidden !important;
+ }
+
+body {
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--primary-color) !important;
+  /* background-color: #525659 !important; */
+
+}
+
+section {
+  font-size: 1.8rem;
+}
+
+.container{
+  padding-left: 5rem !important;
+}
+
+/* ------------------------------- Utilis Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.no-border{
+  border: none !important;
+}
+
+.border-radius{
+  border-radius: 1rem !important;
+}
+.greenBg{
+  background-color: var(--green-color) !important;
+}
+.lg-font{
+   font-size: 2.2rem !important;
+}
+
+.grey{
+   color: var(--black-color);
+}
+.blue{
+  color: var(--secondar-color) !important;
+}
+.bold{
+  font-weight: 700 !important;
+}
+/* ------------------------------- Navbar Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section-navbar{
+  padding: 20px 0;
+  position: absolute;
+}
+
+.navbar-nav button{
+  font-size: 1.4rem;
+  color: white;
+  background-color:transparent;
+  border: 3px solid white;
+  font-weight: bold;
+  position: relative;
+  font-weight: 600;
+  line-height: 1;
+  padding: 15px 20px;
+}
+
+/* ------------------------------- Hero Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.hero-section{
+  height:82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../bg-pattern.png");
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+/* ------------------------------- Abstract Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.section-abstract p{
+  text-align: center;
+}
+.section-abstract .abs-P{
+  font-size: 2.2rem;
+  padding: 5rem 8rem;
+  font-weight: 700;
+}
+
+.abs-text{
+  font-size: 2.2rem;
+  margin-top: -13rem;
+}
+
+.abs-img{
+  position: relative;
+  left: -12rem;
+}
+/* ------------------------------- Features Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section-features{
+
+}
+
+.ft-list{
+  margin:1.5rem;
+}
+.ft-list ul {
+  padding-left: 1.5rem;
+}
+
+
+/* ------------------------------- Jumbotron Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section-jumbotron,.section-6 {
+  background-color: var(--white-color);
+}
+
+
+.section-12,.section-11{
+  padding: 6rem 0;
+}
+
+.section-abstract,.section-features,.section-actions,.section-7,.section-9,.section-11{
+  background-color: var(--white-color);
+}
+/* ------------------------------- Review Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------- Action Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+.not-icon {
+  width: 320px;
+}
+
+.rec-labTxt{
+  position: relative !important;
+}
+
+.rect{
+  height: 15px;
+  width: 15px;
+  background-color: var(--green-color);
+  position: absolute;
+}
+
+.rect-rej{
+  background-color: red;
+}
+.rect-pen{
+  background-color: rgb(143, 143, 143);
+}
+.rect-del{
+  background-color: rgb(167, 69, 145);
+}
+
+.rect-read{
+  background-color: rgb(68, 29, 158);
+}
+
+
+
+.rect-lab
+{
+  position: absolute;
+  left:25px;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+.section-12{
+  background-color:var(--secondar-color);
+  color: var(--white-color);
+}
+
+#lottie-11 #animation-container rect{
+  fill: var(--grey-color) !important;
+}
+/* ------------------------------- Footer Section Styling ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background: #f6f7f8;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 199;
+}
+.social-links img {
+  width: 3rem;
+}
+
+.quick_links {
+    margin: 30px 0;
+}
+.quick_links  a{
+    color:var(--black-color) ;
+    padding: 0 2.5rem;
+    font-weight: 700;
+}
+.crighs {
+    font-size: 13px;
+    color: #91949d;
+    font-weight: 400;
+}
+
+.payment-logos {
+    padding-top: 20px;
+}
+.payment-logos img {
+  padding: 0 1rem;
+}
+
+.btn-sec12{
+  padding: 1rem 2rem !important;
+  background-color: yellow;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border:none;
+  color: var(--secondar-color);
+  font-weight: 700;
+}
+.sec12-hd{
+  font-size: 3rem !important;
+}
+
+.numIco{
+  background-color: var(--teritary-color);  
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.section-6,.section-7,.section-8,.section-9,.section-10,.section-11{
+  padding: 3rem 0 !important;
+}
+
+/* ------------------------------- Media Queries ---------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* Extra Large devices and up */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 1999px) {
+  
+} 
+
+/* Large devices and down */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 992px) {
+
+  
+} 
+
+
+/* Medium devices and down */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 769px) {
+ 
+} 
+
+/* Small devices and down */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand img
+  {
+    width: 150 !important;
+  }
+  .section-abstract .abs-P {
+    font-size: 1.3rem;
+    padding: 5rem;
+  }
+  .abs-img{
+    display: none;
+  }
+
+  .abs-imgM{
+    display: block !important;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
